@@ -13,8 +13,6 @@ import json
 logger = logging.getLogger(__name__)
 
 
-# Create your views here.
-
 @csrf_exempt
 def login_user(request):
     # Get username and password from request.POST dictionary
@@ -119,8 +117,8 @@ def add_review(request):
         except Exception as e:
             return JsonResponse(
                 {"status": 401,
-                "message": f"Error in posting review: {e}"
-                })
+                 "message": f"Error in posting review: {e}"
+                 })
     else:
         return JsonResponse({"status": 403, "message": "Unauthorized"})
 
