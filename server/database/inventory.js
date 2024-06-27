@@ -1,8 +1,4 @@
-/* eslint-disable */
-
-// Add the following comment at the beginning of your file:
-/* eslint-disable */
-/* eslint-env es6 */
+/*jshint esversion: 8 */
 
 const { Int32 } = require('mongodb');
 const mongoose = require('mongoose');
