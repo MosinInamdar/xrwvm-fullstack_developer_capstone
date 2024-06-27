@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <title>Contact Us</title>
+  <style>
+    .contact-container {
+      width: 80%;
+      margin: auto;
+      margin-top: 5%;
+      padding: 20px;
+      background-color: #f8f9fa;
+      border-radius: 8px;
+    }
+    .contact-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .contact-details {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+    .contact-details div {
+      width: 30%;
+    }
+    .contact-details p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="contact-container">
+    <div class="contact-header">
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you! Reach out to us via any of the methods below.</p>
+    </div>
+    <div class="contact-details">
+      <div>
+        <h3>Address</h3>
+        <p>Best Cars Dealership</p>
+        <p>1234 Car Avenue</p>
+        <p>Auto City, NA 12345</p>
+      </div>
+      <div>
+        <h3>Email</h3>
+        <p>General Inquiries: info@bestcars.com</p>
+        <p>Support: support@bestcars.com</p>
+        <p>Sales: sales@bestcars.com</p>
+      </div>
+      <div>
+        <h3>Phone</h3>
+        <p>Main: (123) 456-7890</p>
+        <p>Support: (123) 456-7891</p>
+        <p>Sales: (123) 456-7892</p>
+      </div>
+    </div>
+    <div class="contact-form">
+      <h3>Send us a message</h3>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
