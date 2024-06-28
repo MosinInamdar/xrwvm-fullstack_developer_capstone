@@ -3,3 +3,5 @@ Django
 Pillow
 gunicorn
 python-dotenv
+django-cors-headers
+
